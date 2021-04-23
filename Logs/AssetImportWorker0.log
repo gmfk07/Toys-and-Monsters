@@ -1,0 +1,254 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.2f1 (e5d502d80fbb) revision 15062274'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.867; Version 2004; 64bit' Language: 'en' Physical Memory: 16166 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/gmfk0/Documents/Unity Projects/Toys and Monsters
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51381
+Successfully changed project path to: C:/Users/gmfk0/Documents/Unity Projects/Toys and Monsters
+C:/Users/gmfk0/Documents/Unity Projects/Toys and Monsters
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 49.52 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 1.93 ms.
+Initialize engine version: 2021.1.2f1 (e5d502d80fbb)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gmfk0/Documents/Unity Projects/Toys and Monsters/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 with Max-Q Design (ID=0x1f14)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   27.21.14.5167
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56936
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001378 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 43.70 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.037 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004517 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 45.08 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\gmfk0\Documents\Unity Projects\Toys and Monsters\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\gmfk0\Documents\Unity Projects\Toys and Monsters\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.925 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.13 ms.
+Unloading 2706 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.1 MB.
+System memory in use after: 122.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3164.
+Total: 2.700900 ms (FindLiveObjects: 0.518700 ms CreateObjectMapping: 0.296300 ms MarkObjects: 1.779500 ms  DeleteObjects: 0.105700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/XR/Loaders/Oculus Loader.asset
+  artifactKey: Guid(a4043f4f12194d641aaeeb64060862f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/Loaders/Oculus Loader.asset using Guid(a4043f4f12194d641aaeeb64060862f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975988fad1eefadb5f1a094e199fd41a') in 0.031374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/XR/Loaders
+  artifactKey: Guid(c3d065c4e3ed740488464ff116f7056a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/Loaders using Guid(c3d065c4e3ed740488464ff116f7056a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e464e09646d643dfd2f78a2eb0a0407c') in 0.004752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/XR/Loaders/Windows MR Loader.asset
+  artifactKey: Guid(49b386dc7e2486d49968e1c74178a8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/Loaders/Windows MR Loader.asset using Guid(49b386dc7e2486d49968e1c74178a8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62dbc6c02a2fffab36c539da82e82564') in 0.007303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/XR/XRGeneralSettings.asset
+  artifactKey: Guid(7a05fb024ad53ef4cbfa051a6a8fadd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/XRGeneralSettings.asset using Guid(7a05fb024ad53ef4cbfa051a6a8fadd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df4920e6bd0a5347e4dc34b90fa2816') in 0.013043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/XR
+  artifactKey: Guid(e5ba85619ad5723428b503ce506639b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR using Guid(e5ba85619ad5723428b503ce506639b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '461baccd33a3b868cd615f8fd93aa8c7') in 0.006665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/XR/Loaders/Mock HMD Loader.asset
+  artifactKey: Guid(2714e2f3d3a6dc94ca52e7fb126e22ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/Loaders/Mock HMD Loader.asset using Guid(2714e2f3d3a6dc94ca52e7fb126e22ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7da9874e9bdd3e86f2b7363bce69223') in 0.008621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.714747 seconds.
+  path: Packages/com.unity.xr.interactionsubsystems/package.json
+  artifactKey: Guid(c0331c5fc3e74a6498df537348f77bb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.interactionsubsystems/package.json using Guid(c0331c5fc3e74a6498df537348f77bb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e7defd400951bd8ab9b25ed788e07d4') in 0.020399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.518003 seconds.
+  path: Packages/com.unity.xr.legacyinputhelpers/package.json
+  artifactKey: Guid(d16ab7e2b2998ad4c9729d86bb9aa666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.legacyinputhelpers/package.json using Guid(d16ab7e2b2998ad4c9729d86bb9aa666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc946a350742705a4195c04f3277f9f') in 0.008537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.660576 seconds.
+  path: Packages/com.unity.xr.windowsmr/package.json
+  artifactKey: Guid(1d689dbf8d894e24eac8b30b7e4b1b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.windowsmr/package.json using Guid(1d689dbf8d894e24eac8b30b7e4b1b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a05a48ec661f380a8cbe3db27fbb78') in 0.006447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.302480 seconds.
+  path: Packages/com.unity.xr.oculus/package.json
+  artifactKey: Guid(8cf6f256af772d24eab8f4be77c7fe43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.oculus/package.json using Guid(8cf6f256af772d24eab8f4be77c7fe43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22753c617ecf6077d1d390380380684') in 0.008129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.435783 seconds.
+  path: Packages/com.unity.xr.mock-hmd/package.json
+  artifactKey: Guid(80dac53acb2e3447ba24d6703cd7a1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.mock-hmd/package.json using Guid(80dac53acb2e3447ba24d6703cd7a1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c531c43668176c7997613b9a97ec2f') in 0.001896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.403404 seconds.
+  path: Packages/com.unity.xr.mock-hmd/Editor
+  artifactKey: Guid(2891272beeae347b7bec5bc3d3c7f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.mock-hmd/Editor using Guid(2891272beeae347b7bec5bc3d3c7f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a705a7fec5afaaa20d23010cc92baad6') in 0.006856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.053409 seconds.
+  path: Packages/com.unity.xr.mock-hmd/Editor/Unity.XR.MockHMD.Editor.asmdef
+  artifactKey: Guid(300d793f358644dd6b0134b7520f0752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.mock-hmd/Editor/Unity.XR.MockHMD.Editor.asmdef using Guid(300d793f358644dd6b0134b7520f0752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4cd4db1a233ed5e2b68f931fae72d7c') in 0.007123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.050471 seconds.
+  path: Packages/com.unity.xr.mock-hmd/Editor/MockHMDBuildProcessor.cs
+  artifactKey: Guid(a13e7db61148249f1bc7e9792007ba04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.mock-hmd/Editor/MockHMDBuildProcessor.cs using Guid(a13e7db61148249f1bc7e9792007ba04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f56e64c6363195d347197011b4b015') in 0.015716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.734981 seconds.
+  path: Packages/com.unity.xr.mock-hmd/Editor/MultiCamera
+  artifactKey: Guid(965b6306abb14c94a83226cf0bd0ce41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.mock-hmd/Editor/MultiCamera using Guid(965b6306abb14c94a83226cf0bd0ce41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f8097c3aaf32ff7b588c9094f96b217') in 0.005996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.612738 seconds.
+  path: Packages/com.unity.xr.oculus/Editor
+  artifactKey: Guid(103f61d82b39f494e93197ae35676c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.oculus/Editor using Guid(103f61d82b39f494e93197ae35676c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e813fd570121197a4d27d1fdbfe58e2') in 0.001809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.092711 seconds.
+  path: Packages/com.unity.xr.oculus/Editor/Unity.XR.Oculus.Editor.asmdef
+  artifactKey: Guid(d1502596da9f12c4ead8bb8b8542bdc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.oculus/Editor/Unity.XR.Oculus.Editor.asmdef using Guid(d1502596da9f12c4ead8bb8b8542bdc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5dfbe4100fa78d1c3d64f1929bf7d4b') in 0.005128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.080583 seconds.
+  path: Packages/com.unity.xr.oculus/Editor/OculusSettingsEditor.cs
+  artifactKey: Guid(1d5468858d330b044a94a6dbaa74f60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.oculus/Editor/OculusSettingsEditor.cs using Guid(1d5468858d330b044a94a6dbaa74f60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198828af59ba6667e154a0126791f1d7') in 0.004780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.266378 seconds.
+  path: Packages/com.unity.xr.oculus/Editor/OculusMetadata.cs
+  artifactKey: Guid(1167b3c4ee171944b8e6c46c0b9759fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.oculus/Editor/OculusMetadata.cs using Guid(1167b3c4ee171944b8e6c46c0b9759fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7531b61cda257c33e0060e3764986d') in 0.005877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.018730 seconds.
+  path: Packages/com.unity.xr.oculus/Editor/OculusBuildProcessor.cs
+  artifactKey: Guid(a49c6d715b951224c887be5830cda0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.oculus/Editor/OculusBuildProcessor.cs using Guid(a49c6d715b951224c887be5830cda0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f792d056dff51544b72cf6c4d2451bac') in 0.005931 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007518 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.19 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\gmfk0\Documents\Unity Projects\Toys and Monsters\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\gmfk0\Documents\Unity Projects\Toys and Monsters\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.103 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.13 ms.
+Unloading 2609 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.7 MB.
+System memory in use after: 115.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3168.
+Total: 3.962200 ms (FindLiveObjects: 0.590700 ms CreateObjectMapping: 0.247200 ms MarkObjects: 3.040000 ms  DeleteObjects: 0.081400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007267 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\gmfk0\Documents\Unity Projects\Toys and Monsters\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\gmfk0\Documents\Unity Projects\Toys and Monsters\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.021 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 10 plugins.
+Preloading 2 native plugins for Editor in 0.13 ms.
+Unloading 2609 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.8 MB.
+System memory in use after: 116.0 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3172.
+Total: 2.859800 ms (FindLiveObjects: 0.285100 ms CreateObjectMapping: 0.188800 ms MarkObjects: 2.328400 ms  DeleteObjects: 0.056000 ms)
+
