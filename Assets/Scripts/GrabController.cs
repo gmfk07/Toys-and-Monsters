@@ -21,9 +21,6 @@ public class GrabController : MonoBehaviour
 
     public void Start()
     {
-        InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Left, leftInputDevices);
-        InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Right, rightInputDevices);
-
         foreach (var device in leftInputDevices)
         {
             Debug.Log(string.Format("Left-handed device found with name '{0}' and role '{1}'", device.name, device.role.ToString()));
@@ -37,28 +34,36 @@ public class GrabController : MonoBehaviour
 
     public void Update()
     {
-        float leftGrip, rightGrip;
-        leftInputDevices[0].TryGetFeatureValue(CommonUsages.grip, out leftGrip);
-        rightInputDevices[0].TryGetFeatureValue(CommonUsages.grip, out rightGrip);
-
-        if (leftInputDevices[0].isValid && leftGrip > 0.2f && collidingObjectLeftHand)
+        if (leftInputDevices.Count == 0 || rightInputDevices.Count == 0)
         {
-            GrabObject(Hand.Left);
+            InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Left, leftInputDevices);
+            InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Right, rightInputDevices);
         }
-
-        if (rightInputDevices[0].isValid && rightGrip > 0.2f && collidingObjectRightHand)
+        else
         {
-            GrabObject(Hand.Right);
-        }
+            float leftGrip, rightGrip;
+            leftInputDevices[0].TryGetFeatureValue(CommonUsages.grip, out leftGrip);
+            rightInputDevices[0].TryGetFeatureValue(CommonUsages.grip, out rightGrip);
 
-        if (leftInputDevices[0].isValid && leftGrip < 0.1f && collidingObjectLeftHand)
-        {
-            GrabObject(Hand.Left);
-        }
+            if (leftInputDevices[0].isValid && leftGrip > 0.2f && collidingObjectLeftHand)
+            {
+                GrabObject(Hand.Left);
+            }
 
-        if (rightInputDevices[0].isValid && rightGrip < 0.1f && collidingObjectRightHand)
-        {
-            GrabObject(Hand.Right);
+            if (rightInputDevices[0].isValid && rightGrip > 0.2f && collidingObjectRightHand)
+            {
+                GrabObject(Hand.Right);
+            }
+
+            if (leftInputDevices[0].isValid && leftGrip < 0.1f && collidingObjectLeftHand)
+            {
+                GrabObject(Hand.Left);
+            }
+
+            if (rightInputDevices[0].isValid && rightGrip < 0.1f && collidingObjectRightHand)
+            {
+                GrabObject(Hand.Right);
+            }
         }
     }
 

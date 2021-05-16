@@ -835,6 +835,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1259516257}
   - component: {fileID: 1259516258}
+  - component: {fileID: 1259516259}
+  - component: {fileID: 1259516260}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
@@ -886,6 +888,34 @@ MonoBehaviour:
   m_MoveObjectIn: 14
   m_MoveObjectOut: 15
   m_PoseProvider: {fileID: 0}
+--- !u!114 &1259516259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259516256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196befa60401e794dbc785a762965c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: 0
+  grabController: {fileID: 1917955524}
+--- !u!64 &1259516260
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259516256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: d0c255d07fd68f14b94e55d388e7e6bb, type: 3}
 --- !u!1 &1337195807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,6 +1282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1917955523}
   - component: {fileID: 1917955522}
+  - component: {fileID: 1917955524}
   m_Layer: 0
   m_Name: XRRig
   m_TagString: Untagged
@@ -1291,6 +1322,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1917955524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917955521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681c45b8b768aa74592d1803d8de2539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftTransform: {fileID: 2051011966}
+  rightTransform: {fileID: 1259516257}
+  collidingObjectLeftHand: {fileID: 0}
+  collidingObjectRightHand: {fileID: 0}
 --- !u!1 &2051011965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,6 +1348,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2051011966}
   - component: {fileID: 2051011967}
+  - component: {fileID: 2051011968}
+  - component: {fileID: 2051011969}
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
@@ -1352,6 +1401,34 @@ MonoBehaviour:
   m_MoveObjectIn: 14
   m_MoveObjectOut: 15
   m_PoseProvider: {fileID: 0}
+--- !u!114 &2051011968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051011965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196befa60401e794dbc785a762965c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: 0
+  grabController: {fileID: 1917955524}
+--- !u!64 &2051011969
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051011965}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: ca20b3907ff1c794cb89c1ad2cce8282, type: 3}
 --- !u!1001 &2127320150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1420,13 +1497,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turret
       objectReference: {fileID: 0}
+    - target: {fileID: 3910639633893254290, guid: 2eba43b64410c4a219d234172d7db14e, type: 3}
+      propertyPath: m_TagString
+      value: Grabbable
+      objectReference: {fileID: 0}
     - target: {fileID: 4399650335987416616, guid: 2eba43b64410c4a219d234172d7db14e, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4399650335987416616, guid: 2eba43b64410c4a219d234172d7db14e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.21
+      value: 0.92
       objectReference: {fileID: 0}
     - target: {fileID: 4399650335987416616, guid: 2eba43b64410c4a219d234172d7db14e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1466,3 +1547,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eba43b64410c4a219d234172d7db14e, type: 3}
+--- !u!1 &4122540324743501565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3910639633893254290, guid: 2eba43b64410c4a219d234172d7db14e, type: 3}
+  m_PrefabInstance: {fileID: 4122540324743501564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &4122540324743501566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4122540324743501565}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: 0, y: 0.3, z: 0}
