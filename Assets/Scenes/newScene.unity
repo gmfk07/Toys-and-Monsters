@@ -399,11 +399,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1090219386143568, guid: a817c29ea6847604bb2c6c51d9a74bf1, type: 3}
       propertyPath: m_TagString
-      value: Fire
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4885079432260988, guid: a817c29ea6847604bb2c6c51d9a74bf1, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885079432260988, guid: a817c29ea6847604bb2c6c51d9a74bf1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885079432260988, guid: a817c29ea6847604bb2c6c51d9a74bf1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885079432260988, guid: a817c29ea6847604bb2c6c51d9a74bf1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4885079432260988, guid: a817c29ea6847604bb2c6c51d9a74bf1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -461,6 +473,18 @@ PrefabInstance:
     - target: {fileID: 4399650335987416616, guid: 2eba43b64410c4a219d234172d7db14e, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399650335987416616, guid: 2eba43b64410c4a219d234172d7db14e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399650335987416616, guid: 2eba43b64410c4a219d234172d7db14e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399650335987416616, guid: 2eba43b64410c4a219d234172d7db14e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4399650335987416616, guid: 2eba43b64410c4a219d234172d7db14e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1457,15 +1481,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8706828726338088880, guid: 7bf1f9be2c3c5fd458e824cf6b4b7b48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.356526
+      value: -0.33
       objectReference: {fileID: 0}
     - target: {fileID: 8706828726338088880, guid: 7bf1f9be2c3c5fd458e824cf6b4b7b48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.16
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: 8706828726338088880, guid: 7bf1f9be2c3c5fd458e824cf6b4b7b48, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.98
+      value: -3.41
       objectReference: {fileID: 0}
     - target: {fileID: 8706828726338088880, guid: 7bf1f9be2c3c5fd458e824cf6b4b7b48, type: 3}
       propertyPath: m_LocalRotation.w
