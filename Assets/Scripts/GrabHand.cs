@@ -19,7 +19,6 @@ public class GrabHand : MonoBehaviour
             {
                 grabController.collidingObjectRightHand = other.gameObject;
             }
-            Debug.Log("MAMA MIA LUIGI");
         }
     }
 

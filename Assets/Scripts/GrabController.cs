@@ -45,24 +45,24 @@ public class GrabController : MonoBehaviour
             leftInputDevices[0].TryGetFeatureValue(CommonUsages.grip, out leftGrip);
             rightInputDevices[0].TryGetFeatureValue(CommonUsages.grip, out rightGrip);
 
-            if (leftInputDevices[0].isValid && leftGrip > 0.2f && collidingObjectLeftHand)
+            if (leftInputDevices[0].isValid && leftGrip > 0.2f && collidingObjectLeftHand && collidingObjectLeftHand != objectInRightHand)
             {
                 GrabObject(Hand.Left);
             }
 
-            if (rightInputDevices[0].isValid && rightGrip > 0.2f && collidingObjectRightHand)
+            if (rightInputDevices[0].isValid && rightGrip > 0.2f && collidingObjectRightHand && collidingObjectRightHand != objectInLeftHand)
             {
                 GrabObject(Hand.Right);
             }
 
-            if (leftInputDevices[0].isValid && leftGrip < 0.1f && collidingObjectLeftHand)
+            if (leftInputDevices[0].isValid && leftGrip < 0.1f && objectInLeftHand)
             {
-                GrabObject(Hand.Left);
+                ReleaseObject(Hand.Left);
             }
 
-            if (rightInputDevices[0].isValid && rightGrip < 0.1f && collidingObjectRightHand)
+            if (rightInputDevices[0].isValid && rightGrip < 0.1f && objectInRightHand)
             {
-                GrabObject(Hand.Right);
+                ReleaseObject(Hand.Right);
             }
         }
     }
